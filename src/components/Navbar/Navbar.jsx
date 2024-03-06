@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
+import AuthLinks from '../AuthLinks/AuthLinks'
 
 const Navbar = () => {
   return (
@@ -14,9 +16,11 @@ const Navbar = () => {
       </div>
       <div className={styles.logo}>parth.dev</div>
       <div className={styles.links}>
+        <ThemeToggle/>
         <Link href="/">HomePage</Link>
         <Link href="/">Contact</Link>
         <Link href="/">About</Link>
+        <AuthLinks/>
 
       </div>
 
