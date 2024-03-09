@@ -17,11 +17,10 @@ const Navbar = () => {
       <div className={styles.logo}>parth.dev</div>
       <div className={styles.links}>
         <ThemeToggle/>
-        <Link href="/">HomePage</Link>
-        <Link href="/">Contact</Link>
-        <Link href="/">About</Link>
+        <Link href="/" className={styles.link}>HomePage</Link>
+        <Link href="/" className={styles.link}>Contact</Link>
+        <Link href="/" className={styles.link}>About</Link>
         <AuthLinks/>
-
       </div>
 
     </div>
